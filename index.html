@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+
+<body>
+    <form id="form" class="">
+        <div class="form-input">
+            <label for="name">Nombre: </label>
+            <input type="text" placeholder="Ingrese su nombre" id="name" name="name">    
+        </div>
+
+        <div class="form-input">
+            <label for="age">edad: </label>
+            <input type="number" placeholder="Ingrese su edad" id="age" name="age">    
+        </div>
+        <div class="form-input">
+            <label for="email">email: </label>
+            <input type="email" placeholder="Ingrese su email" id="email" name="email">
+    
+        </div>
+
+
+        <div class="form-input">
+            <label for="pass">contraseña: </label>
+            <input type="password" placeholder="crea una contraseña" id="pass" name="pass">    
+        </div>
+
+        <div class="form-input">
+            <label for="pass1">repita contraseña: </label>
+            <input type="password" placeholder="repite tu contraseña" id="pass1" name="pass1">    
+        </div>
+
+
+        <select name="country" id="country">
+            <option value="">De donde eres</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Venezuela">Venezuela</option>
+        </select>
+
+
+
+        <div class="">
+            <input type="checkbox" name="term" id="term">
+            <label for="term">Aceptas terminos y condiciones</label>    
+        </div>
+
+
+        <div>
+            <label>Que genero eres</label>
+            <div>
+                <input type="radio" name="gender" value="M" id="men">
+                <label for="men">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" value="F" id="women">
+                <label for="women">Femenino</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" value="O" id="other">
+                <label for="other">Otro</label>
+            </div>
+        </div>
+
+
+        <label for="comment">Dejame un comentario</label>
+
+        <textarea name="comment" id="comment" placeholder="Escribe aqui..."></textarea>
+
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </div>
+    </form>
+
+    <div id="userCard" class="card hide_block">
+        <div>
+            <p>Name:</p>
+            <p id="username">Username</p>
+        </div>
+
+        <div>
+            <p>Age:</p>
+            <p id="user_age">Username</p>
+        </div>
+
+        <div>
+            <p>Email:</p>
+            <p id="user_email">Username</p>
+        </div>
+
+        <div>
+            <p>Country: </p>
+            <p id="user_country">Username</p>
+        </div>
+
+        <div>
+            <p>Gender</p>
+            <p id="user_gender">Username</p>
+        </div>
+
+        
+        <div>
+            <p>Comment</p>
+            <p id="user_comment">aa</p>
+        </div>
+
+        <button id="btnBack">
+            Back
+        </button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
